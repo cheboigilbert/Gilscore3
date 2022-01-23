@@ -29,7 +29,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'Tweetme2-dev.us-east-2.elasticbeanstalk.com', '.cfe.sh', 'localhost']
+ALLOWED_HOSTS = ['127.0.0.1', ' Tweetme-dev.us-east-2.elasticbeanstalk.com', '.cfe.sh', 'localhost']
 
 
 
