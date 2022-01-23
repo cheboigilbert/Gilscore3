@@ -29,7 +29,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', ' Tweetme4.eba-kjrd9t53.us-west-2.elasticbeanstalk.com', '.cfe.sh', 'localhost']
+ALLOWED_HOSTS = ['127.0.0.1', 'Tweetme2-dev.us-east-2.elasticbeanstalk.com', '.cfe.sh', 'localhost']
 
 
 
@@ -166,13 +166,13 @@ DEFAULT_RENDERER_CLASSES = [
 DEFAULT_AUTHENTICATION_CLASSES = [
     'rest_framework.authentication.SessionAuthentication'
 ]
-if DEBUG:
-    DEFAULT_RENDERER_CLASSES += [
-        'rest_framework.renderers.BrowsableAPIRenderer',
-    ]
-    DEFAULT_AUTHENTICATION_CLASSES += [
-        'tweetme2.rest_api.dev.DevAuthentication'
-    ]
+#if DEBUG:
+#    DEFAULT_RENDERER_CLASSES += [
+#        'rest_framework.renderers.BrowsableAPIRenderer',
+#    ]
+#    DEFAULT_AUTHENTICATION_CLASSES += [
+#        'tweetme2.rest_api.dev.DevAuthentication'
+#    ]
 REST_FRAMEWORK = {
     
     'DEFAULT_AUTHENTICATION_CLASSES': DEFAULT_AUTHENTICATION_CLASSES,
